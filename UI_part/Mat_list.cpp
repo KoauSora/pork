@@ -8,11 +8,11 @@ Mat_list::Mat_list() {
 
 }
 MAT_LIST * Mat_list::end() {
-
+    return nullptr;
 }
 
 MAT_LIST * Mat_list::begin() {
-
+    return nullptr;
 }
 
 void Mat_list::remove(MAT_LIST *IN) {

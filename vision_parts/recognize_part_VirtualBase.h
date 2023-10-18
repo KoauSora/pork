@@ -5,6 +5,9 @@
 #ifndef PORK_VISION_RECOGNIZE_PART_VIRTUALBASE_H
 #define PORK_VISION_RECOGNIZE_PART_VIRTUALBASE_H
 #include <iostream>
+#include <opencv2/opencv.hpp>
+#include <opencv2/dnn.hpp>
+
 enum SIZE{
     HEARTS,
     DIAMONDS,
@@ -37,8 +40,6 @@ public:
 
 class recognize_part_VirtualBase {
 protected:
-
-
     PORK* pork_1 = nullptr;//我的牌组
     PORK* pork_2 = nullptr;//我的下家
     PORK* pork_3 = nullptr;//我的上家

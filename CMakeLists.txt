@@ -3,31 +3,23 @@ cmake_minimum_required(VERSION 3.26)
 project(pork_vision)
 
 set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_PREFIX_PATH D:\\Pytorch\\CPU\\libtorch)
 
-set(OpenCV_DIR "D:\\OpenCV\\opencv\\mingw_build\\install")#请修改此处的地址。
+set(Torch_DIR "D:\\Pytorch\\CPU\\libtorch\\share\\cmake\\Torch")
+set(OpenCV_DIR "D:\\OpenCV\\build")
 
-find_package(OpenCV REQUIRED)
-
-include_directories(${OpenCV_INCLUDE_DIRS})
-
-#以下部分为Qt部分的cmakelist，需要的人请解除注释。
-##############################################################################
-#set(CMAKE_AUTOMOC ON)
-#set(CMAKE_AUTORCC ON)
-#set(CMAKE_AUTOUIC ON)
-
-#find_package(Qt5 COMPONENTS
-#        Core
-#        Gui
-#        Widgets
-#        REQUIRED)
-#
-###############################################################################
+include_directories(D:\\OpenCV\\build\\include)
+include_directories(D:\\OpenCV\\build\\x64\\vc16\\bin)
+include_directories(D:\\OpenCV\\build)
 include_directories(
         UI_part
         vision_parts
         AI_part
 )
+
+find_package(Torch REQUIRED)
+find_package(OpenCV REQUIRED)
+
 add_executable(pork_vision main.cpp
         vision_parts/recognize_part.cpp
         vision_parts/recognize_part.h
@@ -47,42 +39,12 @@ add_executable(pork_vision main.cpp
         UI_part/Mat_list.h
         AI_part/AL_part.cpp
         AI_part/AL_part.h
+        vision_parts/pytorch_deepstudy.cpp
+        vision_parts/pytorch_deepstudy.h
 )
 
-target_link_libraries(pork_vision ${OpenCV_LIBS})
-###############################################################################
-#target_link_libraries(pork_vision
-#        Qt5::Core
-#        Qt5::Gui
-#        Qt5::Widgets
-#)
-#
-#if (WIN32 AND NOT DEFINED CMAKE_TOOLCHAIN_FILE)
-#    set(DEBUG_SUFFIX)
-#    if (MSVC AND CMAKE_BUILD_TYPE MATCHES "Debug")
-#        set(DEBUG_SUFFIX "d")
-#    endif ()
-#    set(QT_INSTALL_PATH "${CMAKE_PREFIX_PATH}")
-#    if (NOT EXISTS "${QT_INSTALL_PATH}/bin")
-#        set(QT_INSTALL_PATH "${QT_INSTALL_PATH}/..")
-#        if (NOT EXISTS "${QT_INSTALL_PATH}/bin")
-#            set(QT_INSTALL_PATH "${QT_INSTALL_PATH}/..")
-#        endif ()
-#    endif ()
-#    if (EXISTS "${QT_INSTALL_PATH}/plugins/platforms/qwindows${DEBUG_SUFFIX}.dll")
-#        add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
-#                COMMAND ${CMAKE_COMMAND} -E make_directory
-#                "$<TARGET_FILE_DIR:${PROJECT_NAME}>/plugins/platforms/")
-#        add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
-#                COMMAND ${CMAKE_COMMAND} -E copy
-#                "${QT_INSTALL_PATH}/plugins/platforms/qwindows${DEBUG_SUFFIX}.dll"
-#                "$<TARGET_FILE_DIR:${PROJECT_NAME}>/plugins/platforms/")
-#    endif ()
-#    foreach (QT_LIB Core Gui Widgets)
-#        add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
-#                COMMAND ${CMAKE_COMMAND} -E copy
-#                "${QT_INSTALL_PATH}/bin/Qt5${QT_LIB}${DEBUG_SUFFIX}.dll"
-#                "$<TARGET_FILE_DIR:${PROJECT_NAME}>")
-#    endforeach (QT_LIB)
-#endif ()
-###############################################################################
+target_link_libraries(pork_vision ${TORCH_LIBRARIES})
+target_link_libraries(pork_vision D:\\OpenCV\\build\\x64\\vc16\\lib\\opencv_world480d.lib)
+target_link_libraries(pork_vision D:\\OpenCV\\build\\x64\\vc16\\lib\\opencv_world480.lib)
+
+set_property(TARGET pork_vision PROPERTY CXX_STANDARD 17)

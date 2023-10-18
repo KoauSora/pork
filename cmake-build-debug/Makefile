@@ -272,6 +272,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\pork_vision.dir\build.make CMakeFiles/pork_vision.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+vision_parts/pytorch_deepstudy.obj: vision_parts/pytorch_deepstudy.cpp.obj
+.PHONY : vision_parts/pytorch_deepstudy.obj
+
+# target to build an object file
+vision_parts/pytorch_deepstudy.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pork_vision.dir\build.make CMakeFiles/pork_vision.dir/vision_parts/pytorch_deepstudy.cpp.obj
+.PHONY : vision_parts/pytorch_deepstudy.cpp.obj
+
+vision_parts/pytorch_deepstudy.i: vision_parts/pytorch_deepstudy.cpp.i
+.PHONY : vision_parts/pytorch_deepstudy.i
+
+# target to preprocess a source file
+vision_parts/pytorch_deepstudy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pork_vision.dir\build.make CMakeFiles/pork_vision.dir/vision_parts/pytorch_deepstudy.cpp.i
+.PHONY : vision_parts/pytorch_deepstudy.cpp.i
+
+vision_parts/pytorch_deepstudy.s: vision_parts/pytorch_deepstudy.cpp.s
+.PHONY : vision_parts/pytorch_deepstudy.s
+
+# target to generate assembly for a file
+vision_parts/pytorch_deepstudy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\pork_vision.dir\build.make CMakeFiles/pork_vision.dir/vision_parts/pytorch_deepstudy.cpp.s
+.PHONY : vision_parts/pytorch_deepstudy.cpp.s
+
 vision_parts/recognize_part.obj: vision_parts/recognize_part.cpp.obj
 .PHONY : vision_parts/recognize_part.obj
 
@@ -395,6 +419,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... vision_parts/pytorch_deepstudy.obj
+	@echo ... vision_parts/pytorch_deepstudy.i
+	@echo ... vision_parts/pytorch_deepstudy.s
 	@echo ... vision_parts/recognize_part.obj
 	@echo ... vision_parts/recognize_part.i
 	@echo ... vision_parts/recognize_part.s

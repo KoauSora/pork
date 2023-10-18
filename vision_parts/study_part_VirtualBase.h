@@ -5,6 +5,8 @@
 #ifndef PORK_VISION_STUDY_PART_VIRTUALBASE_H
 #define PORK_VISION_STUDY_PART_VIRTUALBASE_H
 
+#include <opencv2/opencv.hpp>
+#include <opencv2/dnn.hpp>
 
 class study_part_VirtualBase {
 protected:

@@ -32,14 +32,14 @@ CONFIGURATION = Debug
 #############################################
 # Include rules file.
 
-include CMakeFiles/rules.ninja
+include CMakeFiles\rules.ninja
 
 # =============================================================================
 
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/21525/Desktop/pork_vision/cmake-build-debug/
+cmake_ninja_workdir = C$:\Users\21525\Desktop\pork\pork\cmake-build-debug\
 # =============================================================================
 # Object build statements for EXECUTABLE target pork_vision
 
@@ -47,49 +47,106 @@ cmake_ninja_workdir = C$:/Users/21525/Desktop/pork_vision/cmake-build-debug/
 #############################################
 # Order-only phony target for pork_vision
 
-build cmake_object_order_depends_target_pork_vision: phony || CMakeFiles/pork_vision.dir
+build cmake_object_order_depends_target_pork_vision: phony || CMakeFiles\pork_vision.dir
 
-build CMakeFiles/pork_vision.dir/main.cpp.obj: CXX_COMPILER__pork_vision_unscanned_Debug C$:/Users/21525/Desktop/pork_vision/main.cpp || cmake_object_order_depends_target_pork_vision
-  DEP_FILE = CMakeFiles\pork_vision.dir\main.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/21525/Desktop/pork_vision/UI_part -IC:/Users/21525/Desktop/pork_vision/vision_parts -IC:/Users/21525/Desktop/pork_vision/AI_part -isystem D:/OpenCV/opencv/mingw_build/install/include
+build CMakeFiles\pork_vision.dir\main.cpp.obj: CXX_COMPILER__pork_vision_unscanned_Debug C$:\Users\21525\Desktop\pork\pork\main.cpp || cmake_object_order_depends_target_pork_vision
+  DEFINES = -DUSE_C10D_GLOO -DUSE_DISTRIBUTED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi /Z7 /EHsc /bigobj
+  INCLUDES = -ID:\OpenCV\build\include -ID:\OpenCV\build\x64\vc16\bin -ID:\OpenCV\build -IC:\Users\21525\Desktop\pork\pork\UI_part -IC:\Users\21525\Desktop\pork\pork\vision_parts -IC:\Users\21525\Desktop\pork\pork\AI_part -external:ID:\Pytorch\CPU\libtorch\include -external:ID:\Pytorch\CPU\libtorch\include\torch\csrc\api\include -external:W0
   OBJECT_DIR = CMakeFiles\pork_vision.dir
   OBJECT_FILE_DIR = CMakeFiles\pork_vision.dir
+  TARGET_COMPILE_PDB = CMakeFiles\pork_vision.dir\
+  TARGET_PDB = pork_vision.pdb
 
-build CMakeFiles/pork_vision.dir/vision_parts/recognize_part.cpp.obj: CXX_COMPILER__pork_vision_unscanned_Debug C$:/Users/21525/Desktop/pork_vision/vision_parts/recognize_part.cpp || cmake_object_order_depends_target_pork_vision
-  DEP_FILE = CMakeFiles\pork_vision.dir\vision_parts\recognize_part.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/21525/Desktop/pork_vision/UI_part -IC:/Users/21525/Desktop/pork_vision/vision_parts -IC:/Users/21525/Desktop/pork_vision/AI_part -isystem D:/OpenCV/opencv/mingw_build/install/include
+build CMakeFiles\pork_vision.dir\vision_parts\recognize_part.cpp.obj: CXX_COMPILER__pork_vision_unscanned_Debug C$:\Users\21525\Desktop\pork\pork\vision_parts\recognize_part.cpp || cmake_object_order_depends_target_pork_vision
+  DEFINES = -DUSE_C10D_GLOO -DUSE_DISTRIBUTED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi /Z7 /EHsc /bigobj
+  INCLUDES = -ID:\OpenCV\build\include -ID:\OpenCV\build\x64\vc16\bin -ID:\OpenCV\build -IC:\Users\21525\Desktop\pork\pork\UI_part -IC:\Users\21525\Desktop\pork\pork\vision_parts -IC:\Users\21525\Desktop\pork\pork\AI_part -external:ID:\Pytorch\CPU\libtorch\include -external:ID:\Pytorch\CPU\libtorch\include\torch\csrc\api\include -external:W0
   OBJECT_DIR = CMakeFiles\pork_vision.dir
   OBJECT_FILE_DIR = CMakeFiles\pork_vision.dir\vision_parts
+  TARGET_COMPILE_PDB = CMakeFiles\pork_vision.dir\
+  TARGET_PDB = pork_vision.pdb
 
-build CMakeFiles/pork_vision.dir/UI_part/UI_widgets.cpp.obj: CXX_COMPILER__pork_vision_unscanned_Debug C$:/Users/21525/Desktop/pork_vision/UI_part/UI_widgets.cpp || cmake_object_order_depends_target_pork_vision
-  DEP_FILE = CMakeFiles\pork_vision.dir\UI_part\UI_widgets.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/21525/Desktop/pork_vision/UI_part -IC:/Users/21525/Desktop/pork_vision/vision_parts -IC:/Users/21525/Desktop/pork_vision/AI_part -isystem D:/OpenCV/opencv/mingw_build/install/include
+build CMakeFiles\pork_vision.dir\UI_part\UI_widgets.cpp.obj: CXX_COMPILER__pork_vision_unscanned_Debug C$:\Users\21525\Desktop\pork\pork\UI_part\UI_widgets.cpp || cmake_object_order_depends_target_pork_vision
+  DEFINES = -DUSE_C10D_GLOO -DUSE_DISTRIBUTED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi /Z7 /EHsc /bigobj
+  INCLUDES = -ID:\OpenCV\build\include -ID:\OpenCV\build\x64\vc16\bin -ID:\OpenCV\build -IC:\Users\21525\Desktop\pork\pork\UI_part -IC:\Users\21525\Desktop\pork\pork\vision_parts -IC:\Users\21525\Desktop\pork\pork\AI_part -external:ID:\Pytorch\CPU\libtorch\include -external:ID:\Pytorch\CPU\libtorch\include\torch\csrc\api\include -external:W0
   OBJECT_DIR = CMakeFiles\pork_vision.dir
   OBJECT_FILE_DIR = CMakeFiles\pork_vision.dir\UI_part
+  TARGET_COMPILE_PDB = CMakeFiles\pork_vision.dir\
+  TARGET_PDB = pork_vision.pdb
 
-build CMakeFiles/pork_vision.dir/UI_part/UI_VirtualBase.cpp.obj: CXX_COMPILER__pork_vision_unscanned_Debug C$:/Users/21525/Desktop/pork_vision/UI_part/UI_VirtualBase.cpp || cmake_object_order_depends_target_pork_vision
-  DEP_FILE = CMakeFiles\pork_vision.dir\UI_part\UI_VirtualBase.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/21525/Desktop/pork_vision/UI_part -IC:/Users/21525/Desktop/pork_vision/vision_parts -IC:/Users/21525/Desktop/pork_vision/AI_part -isystem D:/OpenCV/opencv/mingw_build/install/include
+build CMakeFiles\pork_vision.dir\UI_part\UI_VirtualBase.cpp.obj: CXX_COMPILER__pork_vision_unscanned_Debug C$:\Users\21525\Desktop\pork\pork\UI_part\UI_VirtualBase.cpp || cmake_object_order_depends_target_pork_vision
+  DEFINES = -DUSE_C10D_GLOO -DUSE_DISTRIBUTED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi /Z7 /EHsc /bigobj
+  INCLUDES = -ID:\OpenCV\build\include -ID:\OpenCV\build\x64\vc16\bin -ID:\OpenCV\build -IC:\Users\21525\Desktop\pork\pork\UI_part -IC:\Users\21525\Desktop\pork\pork\vision_parts -IC:\Users\21525\Desktop\pork\pork\AI_part -external:ID:\Pytorch\CPU\libtorch\include -external:ID:\Pytorch\CPU\libtorch\include\torch\csrc\api\include -external:W0
   OBJECT_DIR = CMakeFiles\pork_vision.dir
   OBJECT_FILE_DIR = CMakeFiles\pork_vision.dir\UI_part
+  TARGET_COMPILE_PDB = CMakeFiles\pork_vision.dir\
+  TARGET_PDB = pork_vision.pdb
 
-build CMakeFiles/pork_vision.dir/vision_parts/recognize_part_VirtualBase.cpp.obj: CXX_COMPILER__pork_vision_unscanned_Debug C$:/Users/21525/Desktop/pork_vision/vision_parts/recognize_part_VirtualBase.cpp || cmake_object_order_depends_target_pork_vision
-  DEP_FILE = CMakeFiles\pork_vision.dir\vision_parts\recognize_part_VirtualBase.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/21525/Desktop/pork_vision/UI_part -IC:/Users/21525/Desktop/pork_vision/vision_parts -IC:/Users/21525/Desktop/pork_vision/AI_part -isystem D:/OpenCV/opencv/mingw_build/install/include
+build CMakeFiles\pork_vision.dir\vision_parts\recognize_part_VirtualBase.cpp.obj: CXX_COMPILER__pork_vision_unscanned_Debug C$:\Users\21525\Desktop\pork\pork\vision_parts\recognize_part_VirtualBase.cpp || cmake_object_order_depends_target_pork_vision
+  DEFINES = -DUSE_C10D_GLOO -DUSE_DISTRIBUTED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi /Z7 /EHsc /bigobj
+  INCLUDES = -ID:\OpenCV\build\include -ID:\OpenCV\build\x64\vc16\bin -ID:\OpenCV\build -IC:\Users\21525\Desktop\pork\pork\UI_part -IC:\Users\21525\Desktop\pork\pork\vision_parts -IC:\Users\21525\Desktop\pork\pork\AI_part -external:ID:\Pytorch\CPU\libtorch\include -external:ID:\Pytorch\CPU\libtorch\include\torch\csrc\api\include -external:W0
   OBJECT_DIR = CMakeFiles\pork_vision.dir
   OBJECT_FILE_DIR = CMakeFiles\pork_vision.dir\vision_parts
+  TARGET_COMPILE_PDB = CMakeFiles\pork_vision.dir\
+  TARGET_PDB = pork_vision.pdb
 
-build CMakeFiles/pork_vision.dir/AI_part/AI_part_VirtualBase.cpp.obj: CXX_COMPILER__pork_vision_unscanned_Debug C$:/Users/21525/Desktop/pork_vision/AI_part/AI_part_VirtualBase.cpp || cmake_object_order_depends_target_pork_vision
-  DEP_FILE = CMakeFiles\pork_vision.dir\AI_part\AI_part_VirtualBase.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/21525/Desktop/pork_vision/UI_part -IC:/Users/21525/Desktop/pork_vision/vision_parts -IC:/Users/21525/Desktop/pork_vision/AI_part -isystem D:/OpenCV/opencv/mingw_build/install/include
+build CMakeFiles\pork_vision.dir\AI_part\AI_part_VirtualBase.cpp.obj: CXX_COMPILER__pork_vision_unscanned_Debug C$:\Users\21525\Desktop\pork\pork\AI_part\AI_part_VirtualBase.cpp || cmake_object_order_depends_target_pork_vision
+  DEFINES = -DUSE_C10D_GLOO -DUSE_DISTRIBUTED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi /Z7 /EHsc /bigobj
+  INCLUDES = -ID:\OpenCV\build\include -ID:\OpenCV\build\x64\vc16\bin -ID:\OpenCV\build -IC:\Users\21525\Desktop\pork\pork\UI_part -IC:\Users\21525\Desktop\pork\pork\vision_parts -IC:\Users\21525\Desktop\pork\pork\AI_part -external:ID:\Pytorch\CPU\libtorch\include -external:ID:\Pytorch\CPU\libtorch\include\torch\csrc\api\include -external:W0
   OBJECT_DIR = CMakeFiles\pork_vision.dir
   OBJECT_FILE_DIR = CMakeFiles\pork_vision.dir\AI_part
+  TARGET_COMPILE_PDB = CMakeFiles\pork_vision.dir\
+  TARGET_PDB = pork_vision.pdb
+
+build CMakeFiles\pork_vision.dir\vision_parts\study_part.cpp.obj: CXX_COMPILER__pork_vision_unscanned_Debug C$:\Users\21525\Desktop\pork\pork\vision_parts\study_part.cpp || cmake_object_order_depends_target_pork_vision
+  DEFINES = -DUSE_C10D_GLOO -DUSE_DISTRIBUTED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi /Z7 /EHsc /bigobj
+  INCLUDES = -ID:\OpenCV\build\include -ID:\OpenCV\build\x64\vc16\bin -ID:\OpenCV\build -IC:\Users\21525\Desktop\pork\pork\UI_part -IC:\Users\21525\Desktop\pork\pork\vision_parts -IC:\Users\21525\Desktop\pork\pork\AI_part -external:ID:\Pytorch\CPU\libtorch\include -external:ID:\Pytorch\CPU\libtorch\include\torch\csrc\api\include -external:W0
+  OBJECT_DIR = CMakeFiles\pork_vision.dir
+  OBJECT_FILE_DIR = CMakeFiles\pork_vision.dir\vision_parts
+  TARGET_COMPILE_PDB = CMakeFiles\pork_vision.dir\
+  TARGET_PDB = pork_vision.pdb
+
+build CMakeFiles\pork_vision.dir\vision_parts\study_part_VirtualBase.cpp.obj: CXX_COMPILER__pork_vision_unscanned_Debug C$:\Users\21525\Desktop\pork\pork\vision_parts\study_part_VirtualBase.cpp || cmake_object_order_depends_target_pork_vision
+  DEFINES = -DUSE_C10D_GLOO -DUSE_DISTRIBUTED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi /Z7 /EHsc /bigobj
+  INCLUDES = -ID:\OpenCV\build\include -ID:\OpenCV\build\x64\vc16\bin -ID:\OpenCV\build -IC:\Users\21525\Desktop\pork\pork\UI_part -IC:\Users\21525\Desktop\pork\pork\vision_parts -IC:\Users\21525\Desktop\pork\pork\AI_part -external:ID:\Pytorch\CPU\libtorch\include -external:ID:\Pytorch\CPU\libtorch\include\torch\csrc\api\include -external:W0
+  OBJECT_DIR = CMakeFiles\pork_vision.dir
+  OBJECT_FILE_DIR = CMakeFiles\pork_vision.dir\vision_parts
+  TARGET_COMPILE_PDB = CMakeFiles\pork_vision.dir\
+  TARGET_PDB = pork_vision.pdb
+
+build CMakeFiles\pork_vision.dir\UI_part\Mat_list.cpp.obj: CXX_COMPILER__pork_vision_unscanned_Debug C$:\Users\21525\Desktop\pork\pork\UI_part\Mat_list.cpp || cmake_object_order_depends_target_pork_vision
+  DEFINES = -DUSE_C10D_GLOO -DUSE_DISTRIBUTED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi /Z7 /EHsc /bigobj
+  INCLUDES = -ID:\OpenCV\build\include -ID:\OpenCV\build\x64\vc16\bin -ID:\OpenCV\build -IC:\Users\21525\Desktop\pork\pork\UI_part -IC:\Users\21525\Desktop\pork\pork\vision_parts -IC:\Users\21525\Desktop\pork\pork\AI_part -external:ID:\Pytorch\CPU\libtorch\include -external:ID:\Pytorch\CPU\libtorch\include\torch\csrc\api\include -external:W0
+  OBJECT_DIR = CMakeFiles\pork_vision.dir
+  OBJECT_FILE_DIR = CMakeFiles\pork_vision.dir\UI_part
+  TARGET_COMPILE_PDB = CMakeFiles\pork_vision.dir\
+  TARGET_PDB = pork_vision.pdb
+
+build CMakeFiles\pork_vision.dir\AI_part\AL_part.cpp.obj: CXX_COMPILER__pork_vision_unscanned_Debug C$:\Users\21525\Desktop\pork\pork\AI_part\AL_part.cpp || cmake_object_order_depends_target_pork_vision
+  DEFINES = -DUSE_C10D_GLOO -DUSE_DISTRIBUTED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi /Z7 /EHsc /bigobj
+  INCLUDES = -ID:\OpenCV\build\include -ID:\OpenCV\build\x64\vc16\bin -ID:\OpenCV\build -IC:\Users\21525\Desktop\pork\pork\UI_part -IC:\Users\21525\Desktop\pork\pork\vision_parts -IC:\Users\21525\Desktop\pork\pork\AI_part -external:ID:\Pytorch\CPU\libtorch\include -external:ID:\Pytorch\CPU\libtorch\include\torch\csrc\api\include -external:W0
+  OBJECT_DIR = CMakeFiles\pork_vision.dir
+  OBJECT_FILE_DIR = CMakeFiles\pork_vision.dir\AI_part
+  TARGET_COMPILE_PDB = CMakeFiles\pork_vision.dir\
+  TARGET_PDB = pork_vision.pdb
+
+build CMakeFiles\pork_vision.dir\vision_parts\pytorch_deepstudy.cpp.obj: CXX_COMPILER__pork_vision_unscanned_Debug C$:\Users\21525\Desktop\pork\pork\vision_parts\pytorch_deepstudy.cpp || cmake_object_order_depends_target_pork_vision
+  DEFINES = -DUSE_C10D_GLOO -DUSE_DISTRIBUTED
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -std:c++17 -MDd -Zi /Z7 /EHsc /bigobj
+  INCLUDES = -ID:\OpenCV\build\include -ID:\OpenCV\build\x64\vc16\bin -ID:\OpenCV\build -IC:\Users\21525\Desktop\pork\pork\UI_part -IC:\Users\21525\Desktop\pork\pork\vision_parts -IC:\Users\21525\Desktop\pork\pork\AI_part -external:ID:\Pytorch\CPU\libtorch\include -external:ID:\Pytorch\CPU\libtorch\include\torch\csrc\api\include -external:W0
+  OBJECT_DIR = CMakeFiles\pork_vision.dir
+  OBJECT_FILE_DIR = CMakeFiles\pork_vision.dir\vision_parts
+  TARGET_COMPILE_PDB = CMakeFiles\pork_vision.dir\
+  TARGET_PDB = pork_vision.pdb
 
 
 # =============================================================================
@@ -99,39 +156,41 @@ build CMakeFiles/pork_vision.dir/AI_part/AI_part_VirtualBase.cpp.obj: CXX_COMPIL
 #############################################
 # Link the executable pork_vision.exe
 
-build pork_vision.exe: CXX_EXECUTABLE_LINKER__pork_vision_Debug CMakeFiles/pork_vision.dir/main.cpp.obj CMakeFiles/pork_vision.dir/vision_parts/recognize_part.cpp.obj CMakeFiles/pork_vision.dir/UI_part/UI_widgets.cpp.obj CMakeFiles/pork_vision.dir/UI_part/UI_VirtualBase.cpp.obj CMakeFiles/pork_vision.dir/vision_parts/recognize_part_VirtualBase.cpp.obj CMakeFiles/pork_vision.dir/AI_part/AI_part_VirtualBase.cpp.obj | D$:/OpenCV/opencv/mingw_build/install/x64/mingw/lib/libopencv_gapi480.dll.a D$:/OpenCV/opencv/mingw_build/install/x64/mingw/lib/libopencv_highgui480.dll.a D$:/OpenCV/opencv/mingw_build/install/x64/mingw/lib/libopencv_ml480.dll.a D$:/OpenCV/opencv/mingw_build/install/x64/mingw/lib/libopencv_objdetect480.dll.a D$:/OpenCV/opencv/mingw_build/install/x64/mingw/lib/libopencv_photo480.dll.a D$:/OpenCV/opencv/mingw_build/install/x64/mingw/lib/libopencv_stitching480.dll.a D$:/OpenCV/opencv/mingw_build/install/x64/mingw/lib/libopencv_video480.dll.a D$:/OpenCV/opencv/mingw_build/install/x64/mingw/lib/libopencv_videoio480.dll.a D$:/OpenCV/opencv/mingw_build/install/x64/mingw/lib/libopencv_imgcodecs480.dll.a D$:/OpenCV/opencv/mingw_build/install/x64/mingw/lib/libopencv_dnn480.dll.a D$:/OpenCV/opencv/mingw_build/install/x64/mingw/lib/libopencv_calib3d480.dll.a D$:/OpenCV/opencv/mingw_build/install/x64/mingw/lib/libopencv_features2d480.dll.a D$:/OpenCV/opencv/mingw_build/install/x64/mingw/lib/libopencv_flann480.dll.a D$:/OpenCV/opencv/mingw_build/install/x64/mingw/lib/libopencv_imgproc480.dll.a D$:/OpenCV/opencv/mingw_build/install/x64/mingw/lib/libopencv_core480.dll.a
-  FLAGS = -g
-  LINK_LIBRARIES = D:/OpenCV/opencv/mingw_build/install/x64/mingw/lib/libopencv_gapi480.dll.a  D:/OpenCV/opencv/mingw_build/install/x64/mingw/lib/libopencv_highgui480.dll.a  D:/OpenCV/opencv/mingw_build/install/x64/mingw/lib/libopencv_ml480.dll.a  D:/OpenCV/opencv/mingw_build/install/x64/mingw/lib/libopencv_objdetect480.dll.a  D:/OpenCV/opencv/mingw_build/install/x64/mingw/lib/libopencv_photo480.dll.a  D:/OpenCV/opencv/mingw_build/install/x64/mingw/lib/libopencv_stitching480.dll.a  D:/OpenCV/opencv/mingw_build/install/x64/mingw/lib/libopencv_video480.dll.a  D:/OpenCV/opencv/mingw_build/install/x64/mingw/lib/libopencv_videoio480.dll.a  D:/OpenCV/opencv/mingw_build/install/x64/mingw/lib/libopencv_imgcodecs480.dll.a  D:/OpenCV/opencv/mingw_build/install/x64/mingw/lib/libopencv_dnn480.dll.a  D:/OpenCV/opencv/mingw_build/install/x64/mingw/lib/libopencv_calib3d480.dll.a  D:/OpenCV/opencv/mingw_build/install/x64/mingw/lib/libopencv_features2d480.dll.a  D:/OpenCV/opencv/mingw_build/install/x64/mingw/lib/libopencv_flann480.dll.a  D:/OpenCV/opencv/mingw_build/install/x64/mingw/lib/libopencv_imgproc480.dll.a  D:/OpenCV/opencv/mingw_build/install/x64/mingw/lib/libopencv_core480.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+build pork_vision.exe: CXX_EXECUTABLE_LINKER__pork_vision_Debug CMakeFiles\pork_vision.dir\main.cpp.obj CMakeFiles\pork_vision.dir\vision_parts\recognize_part.cpp.obj CMakeFiles\pork_vision.dir\UI_part\UI_widgets.cpp.obj CMakeFiles\pork_vision.dir\UI_part\UI_VirtualBase.cpp.obj CMakeFiles\pork_vision.dir\vision_parts\recognize_part_VirtualBase.cpp.obj CMakeFiles\pork_vision.dir\AI_part\AI_part_VirtualBase.cpp.obj CMakeFiles\pork_vision.dir\vision_parts\study_part.cpp.obj CMakeFiles\pork_vision.dir\vision_parts\study_part_VirtualBase.cpp.obj CMakeFiles\pork_vision.dir\UI_part\Mat_list.cpp.obj CMakeFiles\pork_vision.dir\AI_part\AL_part.cpp.obj CMakeFiles\pork_vision.dir\vision_parts\pytorch_deepstudy.cpp.obj | D$:\Pytorch\CPU\libtorch\lib\c10.lib D$:\Pytorch\CPU\libtorch\lib\kineto.lib D$:\OpenCV\build\x64\vc16\lib\opencv_world480d.lib D$:\OpenCV\build\x64\vc16\lib\opencv_world480.lib D$:\Pytorch\CPU\libtorch\lib\torch.lib D$:\Pytorch\CPU\libtorch\lib\torch_cpu.lib D$:\Pytorch\CPU\libtorch\lib\c10.lib
+  FLAGS = /DWIN32 /D_WINDOWS /EHsc /Ob0 /Od /RTC1 -MDd -Zi
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = D:\Pytorch\CPU\libtorch\lib\c10.lib  D:\Pytorch\CPU\libtorch\lib\kineto.lib  D:\OpenCV\build\x64\vc16\lib\opencv_world480d.lib  D:\OpenCV\build\x64\vc16\lib\opencv_world480.lib  D:\Pytorch\CPU\libtorch\lib\torch.lib  D:\Pytorch\CPU\libtorch\lib\torch_cpu.lib  D:\Pytorch\CPU\libtorch\lib\c10.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  LINK_PATH = -LIBPATH:\lib   -LIBPATH:\lib\intel64   -LIBPATH:\lib\intel64_win   -LIBPATH:\lib\win-x64
   OBJECT_DIR = CMakeFiles\pork_vision.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\pork_vision.dir\
   TARGET_FILE = pork_vision.exe
-  TARGET_IMPLIB = libpork_vision.dll.a
-  TARGET_PDB = pork_vision.exe.dbg
+  TARGET_IMPLIB = pork_vision.lib
+  TARGET_PDB = pork_vision.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
-build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\21525\Desktop\pork_vision\cmake-build-debug && D:\cmake\bin\cmake-gui.exe -SC:\Users\21525\Desktop\pork_vision -BC:\Users\21525\Desktop\pork_vision\cmake-build-debug"
-  DESC = Running CMake cache editor...
-  pool = console
+build CMakeFiles\edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\21525\Desktop\pork\pork\cmake-build-debug && "D:\Jetbrains\clion\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
   restat = 1
 
-build edit_cache: phony CMakeFiles/edit_cache.util
+build edit_cache: phony CMakeFiles\edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\21525\Desktop\pork_vision\cmake-build-debug && D:\cmake\bin\cmake.exe --regenerate-during-build -SC:\Users\21525\Desktop\pork_vision -BC:\Users\21525\Desktop\pork_vision\cmake-build-debug"
+build CMakeFiles\rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\21525\Desktop\pork\pork\cmake-build-debug && "D:\Jetbrains\clion\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\21525\Desktop\pork\pork -BC:\Users\21525\Desktop\pork\pork\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 
 # =============================================================================
 # Target aliases.
@@ -144,7 +203,7 @@ build pork_vision: phony pork_vision.exe
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/21525/Desktop/pork_vision/cmake-build-debug
+# Folder: C:/Users/21525/Desktop/pork/pork/cmake-build-debug
 
 build all: phony pork_vision.exe
 
@@ -155,14 +214,14 @@ build all: phony pork_vision.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Users/21525/Desktop/pork_vision/CMakeLists.txt CMakeCache.txt CMakeFiles/3.26.5/CMakeCCompiler.cmake CMakeFiles/3.26.5/CMakeCXXCompiler.cmake CMakeFiles/3.26.5/CMakeRCCompiler.cmake CMakeFiles/3.26.5/CMakeSystem.cmake D$:/OpenCV/opencv/mingw_build/install/OpenCVConfig-version.cmake D$:/OpenCV/opencv/mingw_build/install/OpenCVConfig.cmake D$:/OpenCV/opencv/mingw_build/install/x64/mingw/lib/OpenCVConfig.cmake D$:/OpenCV/opencv/mingw_build/install/x64/mingw/lib/OpenCVModules-release.cmake D$:/OpenCV/opencv/mingw_build/install/x64/mingw/lib/OpenCVModules.cmake D$:/cmake/share/cmake-3.26/Modules/CMakeCInformation.cmake D$:/cmake/share/cmake-3.26/Modules/CMakeCXXInformation.cmake D$:/cmake/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake D$:/cmake/share/cmake-3.26/Modules/CMakeGenericSystem.cmake D$:/cmake/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake D$:/cmake/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake D$:/cmake/share/cmake-3.26/Modules/CMakeRCInformation.cmake D$:/cmake/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake D$:/cmake/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake D$:/cmake/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/cmake/share/cmake-3.26/Modules/Compiler/GNU-C.cmake D$:/cmake/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake D$:/cmake/share/cmake-3.26/Modules/Compiler/GNU.cmake D$:/cmake/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake D$:/cmake/share/cmake-3.26/Modules/FindPackageMessage.cmake D$:/cmake/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/cmake/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake D$:/cmake/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/cmake/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake D$:/cmake/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake D$:/cmake/share/cmake-3.26/Modules/Platform/Windows-windres.cmake D$:/cmake/share/cmake-3.26/Modules/Platform/Windows.cmake D$:/cmake/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake
+build build.ninja: RERUN_CMAKE | C$:\Users\21525\Desktop\pork\pork\CMakeLists.txt CMakeCache.txt CMakeFiles\3.26.4\CMakeCCompiler.cmake CMakeFiles\3.26.4\CMakeCXXCompiler.cmake CMakeFiles\3.26.4\CMakeRCCompiler.cmake CMakeFiles\3.26.4\CMakeSystem.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\CMakeCInformation.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\CMakeCXXInformation.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\CMakeGenericSystem.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\CMakeRCInformation.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\Compiler\MSVC.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\FindPackageMessage.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\Platform\Windows.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake D$:\OpenCV\build\OpenCVConfig-version.cmake D$:\OpenCV\build\OpenCVConfig.cmake D$:\OpenCV\build\x64\vc16\lib\OpenCVConfig.cmake D$:\OpenCV\build\x64\vc16\lib\OpenCVModules-debug.cmake D$:\OpenCV\build\x64\vc16\lib\OpenCVModules-release.cmake D$:\OpenCV\build\x64\vc16\lib\OpenCVModules.cmake D$:\Pytorch\CPU\libtorch\share\cmake\Caffe2\Caffe2Config.cmake D$:\Pytorch\CPU\libtorch\share\cmake\Caffe2\Caffe2Targets-release.cmake D$:\Pytorch\CPU\libtorch\share\cmake\Caffe2\Caffe2Targets.cmake D$:\Pytorch\CPU\libtorch\share\cmake\Caffe2\public\mkl.cmake D$:\Pytorch\CPU\libtorch\share\cmake\Caffe2\public\mkldnn.cmake D$:\Pytorch\CPU\libtorch\share\cmake\Caffe2\public\utils.cmake D$:\Pytorch\CPU\libtorch\share\cmake\Torch\TorchConfig.cmake D$:\Pytorch\CPU\libtorch\share\cmake\Torch\TorchConfigVersion.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Users/21525/Desktop/pork_vision/CMakeLists.txt CMakeCache.txt CMakeFiles/3.26.5/CMakeCCompiler.cmake CMakeFiles/3.26.5/CMakeCXXCompiler.cmake CMakeFiles/3.26.5/CMakeRCCompiler.cmake CMakeFiles/3.26.5/CMakeSystem.cmake D$:/OpenCV/opencv/mingw_build/install/OpenCVConfig-version.cmake D$:/OpenCV/opencv/mingw_build/install/OpenCVConfig.cmake D$:/OpenCV/opencv/mingw_build/install/x64/mingw/lib/OpenCVConfig.cmake D$:/OpenCV/opencv/mingw_build/install/x64/mingw/lib/OpenCVModules-release.cmake D$:/OpenCV/opencv/mingw_build/install/x64/mingw/lib/OpenCVModules.cmake D$:/cmake/share/cmake-3.26/Modules/CMakeCInformation.cmake D$:/cmake/share/cmake-3.26/Modules/CMakeCXXInformation.cmake D$:/cmake/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake D$:/cmake/share/cmake-3.26/Modules/CMakeGenericSystem.cmake D$:/cmake/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake D$:/cmake/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake D$:/cmake/share/cmake-3.26/Modules/CMakeRCInformation.cmake D$:/cmake/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake D$:/cmake/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake D$:/cmake/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/cmake/share/cmake-3.26/Modules/Compiler/GNU-C.cmake D$:/cmake/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake D$:/cmake/share/cmake-3.26/Modules/Compiler/GNU.cmake D$:/cmake/share/cmake-3.26/Modules/FindPackageHandleStandardArgs.cmake D$:/cmake/share/cmake-3.26/Modules/FindPackageMessage.cmake D$:/cmake/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/cmake/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake D$:/cmake/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/cmake/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake D$:/cmake/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake D$:/cmake/share/cmake-3.26/Modules/Platform/Windows-windres.cmake D$:/cmake/share/cmake-3.26/Modules/Platform/Windows.cmake D$:/cmake/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake: phony
+build C$:\Users\21525\Desktop\pork\pork\CMakeLists.txt CMakeCache.txt CMakeFiles\3.26.4\CMakeCCompiler.cmake CMakeFiles\3.26.4\CMakeCXXCompiler.cmake CMakeFiles\3.26.4\CMakeRCCompiler.cmake CMakeFiles\3.26.4\CMakeSystem.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\CMakeCInformation.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\CMakeCXXInformation.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\CMakeCommonLanguageInclude.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\CMakeGenericSystem.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\CMakeInitializeConfigs.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\CMakeLanguageInformation.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\CMakeRCInformation.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\CMakeSystemSpecificInformation.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\CMakeSystemSpecificInitialize.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\Compiler\CMakeCommonCompilerMacros.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\Compiler\MSVC-C.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\Compiler\MSVC-CXX.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\Compiler\MSVC.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\FindPackageHandleStandardArgs.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\FindPackageMessage.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\Platform\Windows-MSVC-C.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\Platform\Windows-MSVC-CXX.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\Platform\Windows-MSVC.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\Platform\Windows.cmake D$:\Jetbrains\clion\CLion$ 2023.2.2\bin\cmake\win\x64\share\cmake-3.26\Modules\Platform\WindowsPaths.cmake D$:\OpenCV\build\OpenCVConfig-version.cmake D$:\OpenCV\build\OpenCVConfig.cmake D$:\OpenCV\build\x64\vc16\lib\OpenCVConfig.cmake D$:\OpenCV\build\x64\vc16\lib\OpenCVModules-debug.cmake D$:\OpenCV\build\x64\vc16\lib\OpenCVModules-release.cmake D$:\OpenCV\build\x64\vc16\lib\OpenCVModules.cmake D$:\Pytorch\CPU\libtorch\share\cmake\Caffe2\Caffe2Config.cmake D$:\Pytorch\CPU\libtorch\share\cmake\Caffe2\Caffe2Targets-release.cmake D$:\Pytorch\CPU\libtorch\share\cmake\Caffe2\Caffe2Targets.cmake D$:\Pytorch\CPU\libtorch\share\cmake\Caffe2\public\mkl.cmake D$:\Pytorch\CPU\libtorch\share\cmake\Caffe2\public\mkldnn.cmake D$:\Pytorch\CPU\libtorch\share\cmake\Caffe2\public\utils.cmake D$:\Pytorch\CPU\libtorch\share\cmake\Torch\TorchConfig.cmake D$:\Pytorch\CPU\libtorch\share\cmake\Torch\TorchConfigVersion.cmake: phony
 
 
 #############################################
