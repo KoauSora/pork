@@ -1,4 +1,0 @@
-ToolSet: 17.0 (local)@D:\Visual_Studio\Community
-Options: msvc.arch=x86_amd64
-
-Options:-DCMAKE_MAKE_PROGRAM=D:/Jetbrains/clion/CLion 2023.2.2/bin/ninja/win/x64/ninja.exe
